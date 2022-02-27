@@ -4,9 +4,9 @@ import { useRouter } from "next/router"
 
 export default function NaviBar(){
     const router =useRouter();
-    console.log(router);
     return(
         <nav >
+            <img src="/vercel.svg"/>
             <Link href="/">
                 <a>Home</a>
                 </Link>
