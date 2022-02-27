@@ -1,15 +1,11 @@
 import {  Fragment } from "react";
 import Layout from "../components/Layout";
-import NaviBar from '../components/Navibar';
+import { AppProps } from "next/dist/shared/lib/router/router";
 
-interface IApp{
-    Component:Function
-    pageProps:string
-}
+import NaviBar from '../components/Navibar';
 import Head from "next/head";
 
-
-export default function App({Component,pageProps}:IApp){
+export default function App({Component,pageProps}:AppProps){
     return (
             <Layout>
                 <Component {...pageProps}/>

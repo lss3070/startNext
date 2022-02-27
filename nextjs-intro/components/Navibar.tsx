@@ -9,17 +9,10 @@ export default function NaviBar(){
             <img src="/vercel.svg"/>
             <Link href="/">
                 <a>Home</a>
-                </Link>
+            </Link>
             <Link href="/about">
                 <a >about</a>
-                </Link>
-                <style jsx global>{
-                    `
-                    a{
-                        color:white;
-                    }`
-                }
-                </style>
+            </Link>
         </nav>
     )
 }
